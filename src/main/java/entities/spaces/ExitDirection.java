@@ -18,17 +18,12 @@ public enum ExitDirection {
     }
 
     public static ExitDirection getDirection(int n) {
-        switch (n) {
-            case 0:
-                return NORTH;
-            case 1:
-                return EAST;
-            case 2:
-                return SOUTH;
-            case 3:
-                return WEST;
-            default:
-                return null;
-        }
+        return switch (n) {
+            case 0 -> NORTH;
+            case 1 -> EAST;
+            case 2 -> SOUTH;
+            case 3 -> WEST;
+            default -> null;
+        };
     }
 }

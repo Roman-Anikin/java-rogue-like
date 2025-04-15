@@ -28,7 +28,7 @@ public class GameMessenger {
             message.append("Your attack against ").append(name).append(" missed.");
             return;
         }
-        String health = "";
+        String health;
         if (monster.getHealth() > 0) {
             health = "He has left " + monster.getHealth() + " health. ";
         } else {

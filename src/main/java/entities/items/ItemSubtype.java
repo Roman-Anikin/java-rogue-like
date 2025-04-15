@@ -17,15 +17,11 @@ public enum ItemSubtype {
     }
 
     public static ItemSubtype getSubtype(int n) {
-        switch (n) {
-            case 0:
-                return STR;
-            case 1:
-                return DEX;
-            case 2:
-                return HP;
-            default:
-                return null;
-        }
+        return switch (n) {
+            case 0 -> STR;
+            case 1 -> DEX;
+            case 2 -> HP;
+            default -> null;
+        };
     }
 }

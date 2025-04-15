@@ -21,34 +21,23 @@ public enum ItemType {
     }
 
     public static ItemType getType(int n) {
-        switch (n) {
-            case 0:
-                return GOLD;
-            case 1:
-                return FOOD;
-            case 2:
-                return ELIXIR;
-            case 3:
-                return SCROLL;
-            case 4:
-                return WEAPON;
-            default:
-                return null;
-        }
+        return switch (n) {
+            case 0 -> GOLD;
+            case 1 -> FOOD;
+            case 2 -> ELIXIR;
+            case 3 -> SCROLL;
+            case 4 -> WEAPON;
+            default -> null;
+        };
     }
 
     public static ItemType getType(char ch) {
-        switch (ch) {
-            case USE_WEAPON:
-                return WEAPON;
-            case USE_FOOD:
-                return FOOD;
-            case USE_ELIXIR:
-                return ELIXIR;
-            case USE_SCROLL:
-                return SCROLL;
-            default:
-                return null;
-        }
+        return switch (ch) {
+            case USE_WEAPON -> WEAPON;
+            case USE_FOOD -> FOOD;
+            case USE_ELIXIR -> ELIXIR;
+            case USE_SCROLL -> SCROLL;
+            default -> null;
+        };
     }
 }

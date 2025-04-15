@@ -46,7 +46,7 @@ public class GameRepository {
 
     public List<GameStatistics> loadStatistics() {
         try (BufferedReader reader = new BufferedReader(new FileReader(STATISTICS_PATH))) {
-            return mapper.readValue(reader, new TypeReference<List<GameStatistics>>() {
+            return mapper.readValue(reader, new TypeReference<>() {
             });
         } catch (IOException i) {
             return null;
