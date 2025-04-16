@@ -146,13 +146,21 @@
 Необходимые инструменты:
 
 * [Java (JDK) 18;](https://github.com/corretto/corretto-18/releases)
-* [Apache Maven 4.x](https://maven.apache.org/users/index.html)
 
 ### С помощью командной строки
 
 Находясь в корневой папке проекта, выполнить:
 
-* mvn package
+Linux/macOS:
+
+* ./mvnw clean package
+
+Windows:
+
+* mvnw.cmd package
+
+После успешной сборки:
+
 * javaw -jar target/rogue-1.0.jar
 
 ### С помощью среды разработки (IntelliJ IDEA, Eclipse, NetBeans)
