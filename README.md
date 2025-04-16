@@ -153,7 +153,7 @@
 
 Linux/macOS:
 
-* ./mvnw clean package
+* ./mvnw package
 
 Windows:
 
